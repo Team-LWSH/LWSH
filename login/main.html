@@ -1,21 +1,98 @@
 <!--login 페이지-->
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="css/style.css">
 
-<!DOCTYPE html>
-<html>
+<h1><a href= '/'>회원가입</a><span><a href= '/'>홈페이지</a></h1></span>
 
-<head>
-    <meta charset="utf-8" />
-    <title>로그인</title>
-</head>
+<!--배너 부분인데 서버에서는 이미지가 뜨지 않네요 html 파일에서 열리는 것을 보면 경로의 문제는 아닌듯합니다..-->
+<div style="text-align : center;">
+    <a href= '/'></a>
+    <img src = './images/leaves.jpg' width = '1500', height = '200'>
+</div>
 
-<body>
-    <nav>
-        <a href="/">Home</a>
-    </nav>
-    <div>
-        <h2>로그인 페이지입니다.</h2>
-        <p>로그인 하세용!</p>
-    </div>
-</body>
+<title> Login Page </title>  
 
-</html>
+<style type="text/css">
+    A:link {text-decoration:none; color:#999999;}
+    A:visited {text-decoration:none; color:#999999;}
+    A:hover {text-decoration:none; color:#999999;}
+    </style>
+
+<style>
+h1{
+    color: #999999;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 12px;
+}
+h2{
+    color: #6BA358;
+    font-size: 30px;
+}
+h3{
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: right;
+    float: right;
+}
+span{
+    margin-left: 15px;
+    float:right;
+}
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+}  
+button {   
+       background-color: white;   
+       width: 20%;  
+        color: orange;   
+        padding: 15px;   
+        margin-left: 40%;   
+        margin-bottom: 10px;
+        margin-top : 10px;
+        border: none;   
+        cursor: pointer;
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+        position:absolute; 
+        left:35%;
+        width: 30%;
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+
+ button:hover {   
+        opacity: 0.7;   
+    }   
+     
+ .container {   
+        padding: 25px;   
+        background-color: #D1E3CB;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h2>Login To Start Mentoring!</h2> </center>   
+    <form>  
+        <div class="container">   
+            <label>ID </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>PW</label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit"><b>LOGIN</b></button>   
+            <br><input type="checkbox" checked="checked"> Remember ID <span><a href="#">Forgot Password? </a></span>
+        </div>   
+    </form>     
+</body>     
+</html>  
