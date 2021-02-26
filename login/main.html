@@ -1,3 +1,5 @@
+<!--일단은 페이지를 영어로 구성해보았습니다. 당연히 한국어로 변경 가능하니 의견 주세요!-->
+
 <!--login 페이지-->
 <!DOCTYPE html>   
 <html>   
@@ -5,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <link rel="stylesheet" href="css/style.css">
 
-<h1><a href= '/'>회원가입</a><span><a href= '/'>홈페이지</a></h1></span>
+<h1><a href= '/'>Sign Up</a><span><a href= '/'>Home</a></h1></span>
 
 <!--배너 부분인데 서버에서는 이미지가 뜨지 않네요 html 파일에서 열리는 것을 보면 경로의 문제는 아닌듯합니다..-->
 <div style="text-align : center;">
@@ -24,7 +26,7 @@
 <style>
 h1{
     color: #999999;
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
     margin-right: 20px;
     margin-top: 10px;
@@ -79,8 +81,8 @@ button {
 
  button:hover {   
         opacity: 0.7;   
-    }   
-     
+    } 
+    
  .container {   
         padding: 25px;   
         background-color: #D1E3CB;  
@@ -88,12 +90,45 @@ button {
     *{margin: 0; padding: 0;}
       button{background: 0 none; border: 0 none;}
 
-      .buttons{position: relative; text-align: center; margin-top: 0px;margin-right: 35%;margin-bottom: 0px;}
-      .buttons button{overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 200px; height: 70px; line-height: 0px; border: 2px solid #56be33af; transition: all 0.5s;}
-      .buttons button:hover{color: white;}
-      .buttons button:before{content: ""; z-index: -1; position: absolute; background: #6BA358; transition: all 1s;}
-.buttons .button3:before{left: 0; bottom: 0; width: 100%; height: 0; border-top-left-radius: 50%; border-top-right-radius: 50%;}
-.buttons .button3:hover:before{height: 200%;}
+  .buttons{
+      position: relative; 
+      text-align: center; 
+       margin-top: 0px;
+       margin-right: 35%;
+       margin-bottom: 0px;}
+
+  .buttons button{
+         overflow: hidden; 
+         position: relative; 
+         display: inline-block; 
+         vertical-align: top; 
+         width: 200px; 
+         height: 70px; 
+         line-height: 0px; 
+         border: 2px solid #56be33af; 
+         transition: all 0.5s;}
+
+  .buttons button:hover{
+         color: white;
+          }
+  .buttons button:before{
+         content: ""; 
+         z-index: -1; 
+         position: absolute;
+         background: #6BA358; 
+         transition: all 1s;
+          }
+  .buttons .button3:before{
+        left: 0; 
+        bottom: 0; 
+        width: 100%; 
+        height: 0; 
+        border-top-left-radius: 50%; 
+        border-top-right-radius: 50%;
+            }
+  .buttons .button3:hover:before{
+        height: 200%;
+            }
 </style>   
 </head>    
 <body>    
@@ -108,7 +143,7 @@ button {
                 <button type="button" class="button3"><b>LOGIN</b></button>
             </div>
             <br><input type="checkbox" checked="checked"> Remember ID <span><a href="#">Forgot Password? </a></span>
-        </div>   
+        </div>
     </form>     
 </body>     
 </html>  
